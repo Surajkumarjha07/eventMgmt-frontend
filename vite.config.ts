@@ -8,6 +8,10 @@ export default defineConfig({
     port: 5173,
     host: '0.0.0.0'
   },
+  preview: {
+    port: 4173,
+    allowedHosts: ['eventmgmt-frontend.onrender.com']
+  },
   plugins: [
     react(),
     tailwindcss()
