@@ -1,4 +1,4 @@
-import { Routes, Route, useNavigate } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import LogIn from "./pages/logIn";
 import SignUp from "./pages/signUp";
 import DeleteUser from "./pages/deleteUser";
@@ -13,15 +13,9 @@ import Tickets from "./pages/tickets";
 import FindEvents from "./pages/find-events";
 import EventInfo from "./pages/event-info";
 import SearchEventPage from "./pages/searchedEvent-page";
-import { useEffect } from "react";
 
 export default function App() {
-  const navigate = useNavigate();
-
-  let isHidden;
-  useEffect(() => {
-    isHidden = location.pathname === "/" || location.pathname === "/sign-up" || location.pathname === "/delete-user" || location.pathname === "/update-user" || location.pathname === "/event-form";
-  }, [navigate])
+  const isHidden = location.pathname === "/" || location.pathname === "/sign-up" || location.pathname === "/delete-user" || location.pathname === "/update-user" || location.pathname === "/event-form";
 
   return (
     <>
