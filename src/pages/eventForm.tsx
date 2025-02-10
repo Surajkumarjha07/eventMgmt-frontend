@@ -1,5 +1,6 @@
 import { useState } from "react"
 import useCreateEventService from "../services/createEventService";
+import { Link } from "react-router-dom";
 
 export default function EventForm() {
     const [locationDetails, setlocationDetails] = useState<boolean>(false);
@@ -44,8 +45,10 @@ export default function EventForm() {
                     alt="bgImg" className="fixed top-0 left-52 -z-10" />
 
                 <div className="w-full">
+                    <Link to={"/home"}>
                     <p className="text-orange-700 font-bold text-2xl cursor-pointer fixed top-4 left-8">
                         eventStream </p>
+                    </Link>
                 </div>
 
                 <div className="w-2/5 mx-auto mt-20 text-start max-md:w-4/5">
