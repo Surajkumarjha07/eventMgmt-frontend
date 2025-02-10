@@ -16,7 +16,7 @@ export default function Navbar() {
             setEmail(parsedValue.email);
             setCookie(fetchedCookie);
         }
-    }, []);
+    }, [navigate]);
 
     const signOut = async () => {
         try {
