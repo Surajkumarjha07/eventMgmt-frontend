@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import LogIn from "./pages/logIn";
 import SignUp from "./pages/signUp";
 import DeleteUser from "./pages/deleteUser";
@@ -15,6 +15,8 @@ import EventInfo from "./pages/event-info";
 import SearchEventPage from "./pages/searchedEvent-page";
 
 export default function App() {
+  const location = useLocation();
+  
   const isHidden = location.pathname === "/" || location.pathname === "/sign-up" || location.pathname === "/delete-user" || location.pathname === "/update-user" || location.pathname === "/event-form";
 
   return (
