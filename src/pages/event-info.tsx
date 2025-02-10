@@ -21,7 +21,7 @@ export default function EventInfo() {
 
     const getEvents = async () => {
         try {
-            const response = await fetch("http://localhost:4000/getAllEvents", {
+            const response = await fetch("https://eventmgmt-backend.onrender.com/getAllEvents", {
                 method: "GET",
                 credentials: "include"
             })
@@ -47,7 +47,7 @@ export default function EventInfo() {
 
     const bookTicket = async () => {
         try {
-            const response = await fetch("http://localhost:4000/bookTicket", {
+            const response = await fetch("https://eventmgmt-backend.onrender.com/bookTicket", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -87,7 +87,7 @@ export default function EventInfo() {
                     {/* <!-- Main Upper section --> */}
                     <section className="w-5/6 mx-auto">
                         <div className="relative mx-auto my-10 max-md:mx-auto h-[28rem] max-[428px]:h-[10rem] max-[428px]:mt-16 max-lg:mt-20 max-lg:h-[18rem] rounded-2xl overflow-hidden">
-                            <img src={`http://localhost:4000/uploads/${img}`} alt="EventImg"
+                            <img src={`https://eventmgmt-backend.onrender.com/uploads/${img}`} alt="EventImg"
                                 className="rounded-xl w-3/4 h-full mx-auto absolute inset-0 z-30" />
                         </div>
 

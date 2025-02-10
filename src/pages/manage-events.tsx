@@ -8,7 +8,7 @@ export default function ManageEvents() {
   const [cookie, setCookie] = useState("");
 
   const getAllUserEvents = async () => {
-    const response = await fetch("http://localhost:4000/getAllUserEvents", {
+    const response = await fetch("https://eventmgmt-backend.onrender.com/getAllUserEvents", {
       method: "GET",
       headers: {
         Authorization: `Bearer ${cookie}`
@@ -23,7 +23,7 @@ export default function ManageEvents() {
   }
 
   const getAllTickets = async () => {
-    const response = await fetch("http://localhost:4000/getAllTickets", {
+    const response = await fetch("https://eventmgmt-backend.onrender.com/getAllTickets", {
       method: "GET",
       headers: {
         Authorization: `Bearer ${cookie}`
@@ -53,7 +53,7 @@ export default function ManageEvents() {
     console.log(title);
 
     try {
-      const response = await fetch("http://localhost:4000/deleteUserEvent", {
+      const response = await fetch("https://eventmgmt-backend.onrender.com/deleteUserEvent", {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
@@ -89,7 +89,7 @@ export default function ManageEvents() {
     console.log(title);
 
     try {
-      const response = await fetch("http://localhost:4000/deleteUserTicket", {
+      const response = await fetch("https://eventmgmt-backend.onrender.com/deleteUserTicket", {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",

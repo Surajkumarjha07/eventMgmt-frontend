@@ -31,7 +31,7 @@ export default function useCreateEventService({ title, description, category, da
         formData.append("image", image);
 
         try {
-            const response = await fetch("http://localhost:4000/createEvent", {
+            const response = await fetch("https://eventmgmt-backend.onrender.com/createEvent", {
                 method: "POST",
                 body: formData,
                 credentials: "include"

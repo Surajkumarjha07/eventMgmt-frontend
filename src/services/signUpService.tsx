@@ -18,7 +18,7 @@ export default function useSignUpService({ email, name, password }: signUpType) 
             return;
         }
         try {
-            const response = await fetch("http://localhost:4000/signUp", {
+            const response = await fetch("https://eventmgmt-backend.onrender.com/signUp", {
                 method: 'POST',
                 headers: {
                     "Content-Type": "application/json"

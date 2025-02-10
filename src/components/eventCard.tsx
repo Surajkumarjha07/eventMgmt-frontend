@@ -13,7 +13,7 @@ export default function EventCard({ img, title, description, date, start_time, l
     return (
         <>
             <section className="googlefont cursor-pointer w-72 bg-white rounded-lg overflow-hidden hover:shadow-lg hover:shadow-gray-300 my-7 max-md:w-52" onClick={getEventInfo}>
-                <img src={`http://localhost:4000/uploads/${img}`} alt="event" />
+                <img src={`https://eventmgmt-backend.onrender.com/uploads/${img}`} alt="event" />
 
                 <div className="px-4 py-4">
                     <h1 className="text-gray-700 font-bold text-lg max-md:text-sm"> {title}  </h1>

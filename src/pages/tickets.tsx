@@ -15,7 +15,7 @@ export default function Tickets() {
   }, [])
 
   const getAllTickets = async () => {
-    const response = await fetch("http://localhost:4000/getAllTickets", {
+    const response = await fetch("https://eventmgmt-backend.onrender.com/getAllTickets", {
       method: "GET",
       credentials: "include"
     })

@@ -28,7 +28,7 @@ export default function Home() {
   useEffect(() => {
     const authorized = async () => {
       try {
-        await fetch("http://localhost:4000/userAuthenticate", {
+        await fetch("https://eventmgmt-backend.onrender.com/userAuthenticate", {
           method: "GET",
           headers: {
             "Content-Type": "application/json",

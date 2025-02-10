@@ -17,7 +17,7 @@ export default function useDeleteUserService({ password, cookie }: deleteUserTyp
         }
 
         try {
-            const response = await fetch("http://localhost:4000/deleteUser", {
+            const response = await fetch("https://eventmgmt-backend.onrender.com/deleteUser", {
                 method: 'DELETE',
                 headers: {
                     "Content-Type": "application/json",
@@ -28,7 +28,7 @@ export default function useDeleteUserService({ password, cookie }: deleteUserTyp
             })
 
             if (response.ok) {
-                const response = await fetch("http://localhost:4000/signOut", {
+                const response = await fetch("https://eventmgmt-backend.onrender.com/signOut", {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",

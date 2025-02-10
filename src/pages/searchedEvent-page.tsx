@@ -10,7 +10,7 @@ export default function SearchEventPage() {
     const [searchParams] = useSearchParams();
 
     const getEventsByCategory = async (category: string) => {
-        const response = await fetch(`http://localhost:4000/eventsByCategory?category=${category}`, {
+        const response = await fetch(`https://eventmgmt-backend.onrender.com/eventsByCategory?category=${category}`, {
             method: "GET",
             headers: {
                 Authorization: `Bearer ${cookie}`

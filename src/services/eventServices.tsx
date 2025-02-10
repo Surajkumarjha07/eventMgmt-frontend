@@ -3,7 +3,7 @@ export default function useGetEvents({ setDelhiEvents, setClassesEvents, setFest
 
     const getDelhiEvents = async () => {
         try {
-            const response = await fetch("http://localhost:4000/eventsByLocation?location=delhi", {
+            const response = await fetch("https://eventmgmt-backend.onrender.com/eventsByLocation?location=delhi", {
                 method: "GET",
                 credentials: "include"
             })
@@ -19,7 +19,7 @@ export default function useGetEvents({ setDelhiEvents, setClassesEvents, setFest
 
     const getOnlineEvents = async () => {
         try {
-            const response = await fetch("http://localhost:4000/eventsByCategory?category=Online Event", {
+            const response = await fetch("https://eventmgmt-backend.onrender.com/eventsByCategory?category=Online Event", {
                 method: "GET",
                 credentials: "include"
             })
@@ -37,7 +37,7 @@ export default function useGetEvents({ setDelhiEvents, setClassesEvents, setFest
 
     const getFestivalEvents = async () => {
         try {
-            const response = await fetch("http://localhost:4000/eventsByCategory?category=Festivals and Fairs Event", {
+            const response = await fetch("https://eventmgmt-backend.onrender.com/eventsByCategory?category=Festivals and Fairs Event", {
                 method: "GET",
                 credentials: "include"
             })
@@ -55,7 +55,7 @@ export default function useGetEvents({ setDelhiEvents, setClassesEvents, setFest
 
     const getClassEvents = async () => {
         try {
-            const response = await fetch("http://localhost:4000/eventsByCategory?category=Classes and Workshops Events", {
+            const response = await fetch("https://eventmgmt-backend.onrender.com/eventsByCategory?category=Classes and Workshops Events", {
                 method: "GET",
                 credentials: "include"
             })

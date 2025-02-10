@@ -27,7 +27,7 @@ export default function useUpdateUserService({ newEmail, newName, currentPasswor
     }
 
     try {
-      const response = await fetch("http://localhost:4000/updateUser", {
+      const response = await fetch("https://eventmgmt-backend.onrender.com/updateUser", {
         method: 'PUT',
         headers: {
           "Content-Type": "application/json",
@@ -39,7 +39,7 @@ export default function useUpdateUserService({ newEmail, newName, currentPasswor
 
       if (response.ok) {
         //signOut ->
-        const signOut = await fetch("http://localhost:4000/signOut", {
+        const signOut = await fetch("https://eventmgmt-backend.onrender.com/signOut", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

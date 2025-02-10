@@ -19,7 +19,7 @@ export default function useLogInService({ email, password }: logInType) {
         }
 
         try {
-            const response = await fetch("http://localhost:4000/logIn", {
+            const response = await fetch("https://eventmgmt-backend.onrender.com/logIn", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"

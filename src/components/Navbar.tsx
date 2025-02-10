@@ -20,7 +20,7 @@ export default function Navbar() {
 
     const signOut = async () => {
         try {
-            const response = await fetch("http://localhost:4000/signOut", {
+            const response = await fetch("https://eventmgmt-backend.onrender.com/signOut", {
                 method: "POST",
                 headers: {
                     Authorization: `Bearer ${cookie}`
